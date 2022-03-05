@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Todo app</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+  <body>
+    <div class="input-area">
+      <input placeholder="TODOを入力" />
+      <button>追加</button>
+    </div>
+    <div class="imcomplete-area">
+      <p class="title">未完了のTODO</p>
+      <ul class="todo-list">
+        <li>
+          TODOです
+          <button>完了</button>
+          <button>削除</button>
+        </li>
+        <li>
+          TODOです
+          <button>完了</button>
+          <button>削除</button>
+        </li>
+      </ul>
+    </div>
+    <div class="complete-area">
+      <p class="title">完了したTODO</p>
+      <ul class="todo-list">
+        <li>
+          TODOでした
+          <button>戻す</button>
+        </li>
+      </ul>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
